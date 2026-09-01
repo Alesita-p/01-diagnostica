@@ -17,11 +17,17 @@ jobs:
     name: "Autograding and Integrity Guard"
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout del Codigo"
+      - name: "Checkout del Codigo (Pull Request)"
+        if: github.event.pull_request
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
-          ref: ${{ github.event.pull_request.head.ref || github.ref }}
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+
+      - name: "Checkout del Codigo (Default)"
+        if: ${{ !github.event.pull_request }}
+        uses: actions/checkout@v4
+        with:
           fetch-depth: 0
 
       - name: "Inyectar Tests Oficiales de 'main' (Cero Rebase)"
