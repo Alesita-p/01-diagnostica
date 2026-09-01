@@ -19,7 +19,6 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha || github.ref }}
           fetch-depth: 0
-          allow-unsafe-pr-checkout: true
 
       - name: "Inyectar Tests Oficiales de 'main' (Cero Rebase)"
         run: |
