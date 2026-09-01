@@ -6,6 +6,17 @@
 > - **Bloque A (50% · 5.0 pts):** Código fuente en GitHub validado por Autograding Bot en Pull Request.
 > - **Bloque B (50% · 5.0 pts):** Video Screencast demostrativo oral (5 a 6 min) explicando la lógica y pruebas.
 
+> [!NOTE]
+> **💡 Calificación en la Nube (Cero Estrés de Rebase):**
+> No te preocupes por sincronizar tu fork ni hacer `git rebase`. Nuestro bot de GitHub Actions inyecta automáticamente las suites de evaluación oficiales más recientes al abrir o actualizar tu Pull Request.
+
+> [!TIP]
+> **⚠️ Protocolo de Contingencia (Solo si el docente lo solicita):**
+> Si el docente comunica expresamente que se agregó un archivo plantilla nuevo que necesitas en tu máquina, actualiza tu fork con **1 solo clic** desde la web de GitHub en **"Sync fork ▾ ➔ Update branch"**, o ejecuta en tu terminal:
+> ```bash
+> git pull https://github.com/UETS-Programacion-Movil/01-diagnostica.git main
+> ```
+
 ---
 
 ## 📺 Diapositivas Interactivas 16:9

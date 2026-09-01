@@ -21,6 +21,13 @@ jobs:
           fetch-depth: 0
           allow-unsafe-pr-checkout: true
 
+      - name: "Inyectar Tests Oficiales de 'main' (Cero Rebase)"
+        run: |
+          git fetch origin main
+          git checkout origin/main -- tests/
+          git checkout origin/main -- package.json
+          git checkout origin/main -- pnpm-lock.yaml
+
       - name: "Setup pnpm"
         uses: pnpm/action-setup@v4
         with:

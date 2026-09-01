@@ -533,12 +533,269 @@
           <span class="ctrl-pill" onclick="prevSlide()">[←]</span>
           <span class="ctrl-pill" onclick="nextSlide()">[→]</span>
         </div>
-        <span class="slide-num">SLIDE 02 / 18</span>
+        <span class="slide-num">SLIDE 02 / 22</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 03: LOS 4 BLOQUES ==================== -->
+    <!-- ==================== SLIDE 03: SETUP DEL ENTORNO ==================== -->
     <section class="slide" data-slide="3">
+      <div class="topbar">
+        <div class="topbar-left">
+          <span class="pill pill-cyan"><i data-lucide="wrench" style="width: 16px; height: 16px;"></i> PREPARACIÓN DEL ENTORNO</span>
+          <span>STACK TÉCNICO OFICIAL 2026</span>
+        </div>
+        <div>HERRAMIENTAS BASE REQUERIDAS</div>
+      </div>
+
+      <div style="margin-top: 10px;">
+        <h2 class="font-display title-xl">SETUP DEL ENTORNO DE DESARROLLO</h2>
+        <p style="font-size: 24px; color: var(--ink-2); margin-bottom: 20px;">
+          Antes de escribir código, comprueba que tu estación de trabajo tenga los motores necesarios:
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card card-yellow">
+          <div class="mono" style="font-size: 16px; font-weight: 800; color: var(--yellow-dark); margin-bottom: 8px;">
+            <i data-lucide="cpu" style="width: 18px; height: 18px; display: inline; vertical-align: middle;"></i> 1. RUNTIME & PAQUETES
+          </div>
+          <h3 class="font-display" style="font-size: 22px; margin-bottom: 8px;">NODE.JS 22 & PNPM 10</h3>
+          <p style="font-size: 15px; font-weight: 600; line-height: 1.45; margin-bottom: 12px;">
+            Instala <b>Node.js 22 LTS</b> y activa el gestor de paquetes de alto rendimiento:
+          </p>
+          <div class="code-box" style="font-size: 13px; padding: 10px 14px;">npm install -g pnpm@10
+node -v   # v22.x.x
+pnpm -v   # 10.x.x</div>
+        </div>
+
+        <div class="card card-pink">
+          <div class="mono" style="font-size: 16px; font-weight: 800; color: var(--pink-dark); margin-bottom: 8px;">
+            <i data-lucide="coffee" style="width: 18px; height: 18px; display: inline; vertical-align: middle;"></i> 2. MOTOR DE LÓGICA
+          </div>
+          <h3 class="font-display" style="font-size: 22px; margin-bottom: 8px;">JAVA JDK 21+</h3>
+          <p style="font-size: 15px; font-weight: 600; line-height: 1.45; margin-bottom: 12px;">
+            Necesario para la compilación de los 5 ejercicios de lógica y POO del Bloque A:
+          </p>
+          <div class="code-box" style="font-size: 13px; padding: 10px 14px;">javac --version
+# JDK 21 o superior
+# configurado en PATH</div>
+        </div>
+
+        <div class="card card-green">
+          <div class="mono" style="font-size: 16px; font-weight: 800; color: var(--green-dark); margin-bottom: 8px;">
+            <i data-lucide="terminal" style="width: 18px; height: 18px; display: inline; vertical-align: middle;"></i> 3. INICIO EN LOCAL
+          </div>
+          <h3 class="font-display" style="font-size: 22px; margin-bottom: 8px;">DEPENDENCIAS DE TEST</h3>
+          <p style="font-size: 15px; font-weight: 600; line-height: 1.45; margin-bottom: 12px;">
+            Una vez clonado tu fork, inicializa las herramientas de validación:
+          </p>
+          <div class="code-box" style="font-size: 13px; padding: 10px 14px;">pnpm install
+pnpm run check
+# Verifica suites</div>
+        </div>
+      </div>
+
+      <div class="card card-cream" style="margin-top: 18px; padding: 12px 18px;">
+        <span class="mono" style="font-weight: 800; color: #0284C7;"><i data-lucide="help-circle" style="width: 18px; height: 18px; display: inline; vertical-align: middle;"></i> REFLEXIÓN SOCRÁTICA:</span>
+        <span style="font-size: 17px; margin-left: 8px; font-weight: 600;">
+          ¿Por qué en la industria moderna preferimos gestores con dependencias aisladas como <span class="mono">pnpm</span> en lugar de árboles duplicados en disco?
+        </span>
+      </div>
+
+      <div class="bottombar">
+        <span>CONFIGURACIÓN DEL STACK DE DESARROLLO</span>
+        <div class="bottom-controls">
+          <span class="ctrl-pill" onclick="prevSlide()">[←]</span>
+          <span class="ctrl-pill" onclick="nextSlide()">[→]</span>
+        </div>
+        <span class="slide-num">SLIDE 03 / 22</span>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 04: GITHUB FLOW ==================== -->
+    <section class="slide" data-slide="4">
+      <div class="topbar">
+        <div class="topbar-left">
+          <span class="pill pill-orange"><i data-lucide="git-branch" style="width: 16px; height: 16px;"></i> GITHUB FLOW PROFESIONAL</span>
+          <span>CICLO DE VIDA DE UNA ENTREGA</span>
+        </div>
+        <div>ESTÁNDAR DE COLABORACIÓN INSTITUCIONAL</div>
+      </div>
+
+      <div style="margin-top: 10px;">
+        <h2 class="font-display title-xl">EL CICLO DE VIDA DE TU CÓDIGO</h2>
+        <p style="font-size: 24px; color: var(--ink-2); margin-bottom: 20px;">
+          En proyectos profesionales no trabajamos directamente sobre <span class="mono">main</span>. Sigue el flujo:
+        </p>
+      </div>
+
+      <div class="grid-4">
+        <div class="card card-yellow">
+          <div class="pill" style="font-size: 12px; margin-bottom: 8px; background: #FFF;">PASO 1</div>
+          <h3 class="font-display" style="font-size: 20px; margin-bottom: 8px;">FORK EN GITHUB</h3>
+          <p style="font-size: 15px; font-weight: 600; line-height: 1.4;">
+            Crea tu copia personal desde el botón <b>Fork</b> en la organización oficial.
+          </p>
+        </div>
+
+        <div class="card card-cyan">
+          <div class="pill pill-cyan" style="font-size: 12px; margin-bottom: 8px;">PASO 2</div>
+          <h3 class="font-display" style="font-size: 20px; margin-bottom: 8px;">CLONE & RAMA</h3>
+          <p style="font-size: 14px; font-weight: 600; line-height: 1.35; margin-bottom: 8px;">
+            Clona y crea tu rama descriptiva:
+          </p>
+          <div class="code-box" style="font-size: 11.5px; padding: 6px 8px;">git checkout -b diagnostica-apellido-nombre</div>
+        </div>
+
+        <div class="card card-pink">
+          <div class="pill pill-pink" style="font-size: 12px; margin-bottom: 8px;">PASO 3</div>
+          <h3 class="font-display" style="font-size: 20px; margin-bottom: 8px;">RESOLVER & TEST</h3>
+          <p style="font-size: 14px; font-weight: 600; line-height: 1.35; margin-bottom: 8px;">
+            Prueba cada bloque localmente:
+          </p>
+          <div class="code-box" style="font-size: 11.5px; padding: 6px 8px;">pnpm run start:01
+pnpm run test:all</div>
+        </div>
+
+        <div class="card card-green">
+          <div class="pill pill-green" style="font-size: 12px; margin-bottom: 8px;">PASO 4</div>
+          <h3 class="font-display" style="font-size: 20px; margin-bottom: 8px;">PULL REQUEST</h3>
+          <p style="font-size: 15px; font-weight: 600; line-height: 1.4;">
+            Haz <span class="mono">git push</span> y abre el PR hacia la rama <span class="mono">main</span> de la organización.
+          </p>
+        </div>
+      </div>
+
+      <div class="card card-cream" style="margin-top: 20px; padding: 12px 18px;">
+        <span class="mono" style="font-weight: 800; color: var(--orange);"><i data-lucide="git-pull-request" style="width: 18px; height: 18px; display: inline; vertical-align: middle;"></i> SUSTENTACIÓN EN PR:</span>
+        <span style="font-size: 17px; margin-left: 8px; font-weight: 600;">
+          No olvides pegar el <b>enlace público a tu video screencast (Bloque B)</b> en la descripción de tu Pull Request para completar los 10.0 puntos.
+        </span>
+      </div>
+
+      <div class="bottombar">
+        <span>ESTÁNDAR DE CONTROL DE VERSIONES</span>
+        <div class="bottom-controls">
+          <span class="ctrl-pill" onclick="prevSlide()">[←]</span>
+          <span class="ctrl-pill" onclick="nextSlide()">[→]</span>
+        </div>
+        <span class="slide-num">SLIDE 04 / 22</span>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 05: CONVENTIONAL COMMITS ==================== -->
+    <section class="slide" data-slide="5">
+      <div class="topbar">
+        <div class="topbar-left">
+          <span class="pill pill-green"><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> CALIDAD DE CÓDIGO (+0.50 PTS)</span>
+          <span>ESTÁNDAR CONVENTIONAL COMMITS</span>
+        </div>
+        <div>LINTER AUTOMATIZADO EN GITHUB ACTIONS</div>
+      </div>
+
+      <div style="margin-top: 10px;">
+        <h2 class="font-display title-xl">CONVENTIONAL COMMITS: HISTORIAL PROFESIONAL</h2>
+        <p style="font-size: 24px; color: var(--ink-2); margin-bottom: 20px;">
+          El bot de autoevaluación audita tus commits. Mensajes estructurados suman <b>+0.50 pts</b> en el Bloque A:
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card card-cyan">
+          <h3 class="font-display" style="font-size: 22px; margin-bottom: 12px;"><i data-lucide="terminal" style="width: 18px; height: 18px; display: inline; vertical-align: middle;"></i> PREFIJOS SEMÁNTICOS PERMITIDOS:</h3>
+          <ul style="font-size: 16px; line-height: 1.55; margin-left: 20px; font-weight: 600;">
+            <li><span class="mono" style="color: #0369A1; font-weight: 800;">feat(alcance):</span> Nueva funcionalidad o reto completado (ej. <span class="mono">feat(java): resuelto Ejercicio1</span>).</li>
+            <li><span class="mono" style="color: #0369A1; font-weight: 800;">fix(alcance):</span> Corrección de un bug en el código (ej. <span class="mono">fix(dom): corregido evento click</span>).</li>
+            <li><span class="mono" style="color: #0369A1; font-weight: 800;">docs(alcance):</span> Ajustes de documentación o notas (ej. <span class="mono">docs(readme): enlace de video</span>).</li>
+            <li><span class="mono" style="color: #0369A1; font-weight: 800;">style(alcance):</span> Formato y estilos sin afectar lógica (ej. <span class="mono">style(css): maquetacion flexbox</span>).</li>
+            <li><span class="mono" style="color: #0369A1; font-weight: 800;">refactor(alcance):</span> Reestructuración de código para mayor limpieza.</li>
+          </ul>
+        </div>
+
+        <div class="card card-pink">
+          <h3 class="font-display" style="font-size: 22px; margin-bottom: 12px;"><i data-lucide="alert-triangle" style="width: 18px; height: 18px; display: inline; vertical-align: middle;"></i> COMMITS QUE PIERDEN PUNTAJE (0.00 PTS):</h3>
+          <ul style="font-size: 16px; line-height: 1.6; margin-left: 20px; font-weight: 600; margin-bottom: 14px;">
+            <li>❌ <span class="mono">"cambios finales"</span> (Genérico, sin prefijo).</li>
+            <li>❌ <span class="mono">"subiendo tarea"</span> (No describe la lógica resuelta).</li>
+            <li>❌ <span class="mono">"asdasd"</span> o <span class="mono">"commit 1"</span> (Rechazado por el linter).</li>
+          </ul>
+          <div class="pill pill-pink" style="font-size: 14px; width: 100%; justify-content: center;">
+            Estructura: tipo(alcance): descripción en minúsculas
+          </div>
+        </div>
+      </div>
+
+      <div class="bottombar">
+        <span>EVALUACIÓN AUTOMATIZADA DE BUENAS PRÁCTICAS</span>
+        <div class="bottom-controls">
+          <span class="ctrl-pill" onclick="prevSlide()">[←]</span>
+          <span class="ctrl-pill" onclick="nextSlide()">[→]</span>
+        </div>
+        <span class="slide-num">SLIDE 05 / 22</span>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 06: TRANQUILIDAD & CONTINGENCIA ==================== -->
+    <section class="slide" data-slide="6">
+      <div class="topbar">
+        <div class="topbar-left">
+          <span class="pill pill-inst"><i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> PAZ MENTAL & ASISTENCIA TÉCNICA</span>
+          <span>FLUJO DESACOPLADO UETS</span>
+        </div>
+        <div>CERO ESTRÉS DE REBASE</div>
+      </div>
+
+      <div style="margin-top: 10px;">
+        <h2 class="font-display title-xl">TRANQUILIDAD: CERO ESTRÉS DE REBASE</h2>
+        <p style="font-size: 24px; color: var(--ink-2); margin-bottom: 20px;">
+          Tu entorno de entrega está diseñado para que te enfoques exclusivamente en programar:
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card card-green">
+          <div class="mono" style="font-size: 18px; font-weight: 800; color: var(--green-dark); margin-bottom: 8px;">
+            <i data-lucide="cloud" style="width: 20px; height: 20px; display: inline; vertical-align: middle;"></i> 💡 EVALUACIÓN EN LA NUBE (HABITUAL)
+          </div>
+          <h3 class="font-display" style="font-size: 24px; margin-bottom: 10px;">NO NECESITAS HACER REBASE</h3>
+          <p style="font-size: 17px; font-weight: 600; line-height: 1.5; margin-bottom: 12px;">
+            El bot en GitHub Actions inyecta los tests oficiales actualizados en tiempo de ejecución.
+          </p>
+          <ul style="font-size: 16px; line-height: 1.5; margin-left: 20px; font-weight: 600;">
+            <li>Tu fork no necesita sincronizarse para calificar.</li>
+            <li>Concéntrate en resolver <span class="mono">bloque_a/</span> a <span class="mono">bloque_d/</span>.</li>
+            <li>Tus PRs se evalúan con la versión oficial del docente.</li>
+          </ul>
+        </div>
+
+        <div class="card card-yellow">
+          <div class="mono" style="font-size: 18px; font-weight: 800; color: var(--yellow-dark); margin-bottom: 8px;">
+            <i data-lucide="life-buoy" style="width: 20px; height: 20px; display: inline; vertical-align: middle;"></i> ⚠️ CONTINGENCIA (SOLO SI EL DOCENTE LO PIDE)
+          </div>
+          <h3 class="font-display" style="font-size: 24px; margin-bottom: 10px;">ACTUALIZACIÓN EN 1 CLIC</h3>
+          <p style="font-size: 16px; font-weight: 600; line-height: 1.5; margin-bottom: 10px;">
+            Si el docente indica que faltó un archivo plantilla, actualiza sin terminal:
+          </p>
+          <ul style="font-size: 15px; line-height: 1.45; margin-left: 20px; font-weight: 600;">
+            <li><b>En la web:</b> Entra a tu fork en GitHub y pulsa <b>Sync fork ▾ ➔ Update branch</b>.</li>
+            <li><b>En VS Code:</b> Ejecuta <span class="mono">git pull</span> para traer los archivos.</li>
+            <li><b>O vía comando:</b> <span class="mono" style="font-size: 13px;">git pull https://github.com/UETS-Programacion-Movil/01-diagnostica.git main</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottombar">
+        <span>ASISTENCIA Y SOPORTE CONTINUO</span>
+        <div class="bottom-controls">
+          <span class="ctrl-pill" onclick="prevSlide()">[←]</span>
+          <span class="ctrl-pill" onclick="nextSlide()">[→]</span>
+        </div>
+        <span class="slide-num">SLIDE 06 / 22</span>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 07: LOS 4 BLOQUES ==================== -->
+    <section class="slide" data-slide="7">
       <div class="topbar">
         <div class="topbar-left">
           <span class="pill pill-yellow"><i data-lucide="layers" style="width: 16px; height: 16px;"></i> ESTRUCTURA DEL TALLER</span>

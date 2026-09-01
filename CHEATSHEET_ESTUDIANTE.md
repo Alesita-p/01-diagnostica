@@ -3,6 +3,23 @@
 
 ---
 
+## ⚡ 0. Setup Rápido del Entorno
+
+```bash
+# 1. Instalar pnpm globalmente
+npm install -g pnpm@10
+
+# 2. Validar versiones de software
+node -v    # Debe ser Node 22 LTS
+pnpm -v    # Debe ser 10.x.x
+javac --version # JDK 21+
+
+# 3. Instalar dependencias del proyecto tras clonar
+pnpm install
+```
+
+---
+
 ## 🛠️ 1. Comandos de Verificación Local
 
 Ejecuta estos comandos en la terminal de VS Code para validar tu progreso:
