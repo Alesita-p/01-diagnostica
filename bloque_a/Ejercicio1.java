@@ -3,7 +3,7 @@ public class Ejercicio1 {
 
         int edad = 17;
         double notaFinal = 9.5;
-        char paralelo = 'A';
+        char paralelo = 'E';
         boolean matriculado = true;
         String nombreEstudiante = "Alesita";
         
