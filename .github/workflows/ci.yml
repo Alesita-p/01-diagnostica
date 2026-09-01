@@ -3,18 +3,19 @@ name: "Autograding"
 on:
   pull_request_target:
     types: [opened, synchronize, reopened]
-  pull_request:
-    types: [opened, synchronize, reopened]
+  push:
+    branches: ["main"]
   workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
 
 jobs:
   evaluate:
     name: "Autograding and Integrity Guard"
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
     steps:
       - name: "Checkout del Codigo"
         uses: actions/checkout@v4
