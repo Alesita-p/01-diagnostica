@@ -7,23 +7,16 @@
 > - **Bloque B (50% · 5.0 pts):** Video Screencast demostrativo oral (5 a 6 min) explicando la lógica y pruebas.
 
 > [!NOTE]
-> **💡 Calificación en la Nube (Cero Estrés de Rebase):**
-> No te preocupes por sincronizar tu fork ni hacer `git rebase`. Nuestro bot de GitHub Actions inyecta automáticamente las suites de evaluación oficiales más recientes al abrir o actualizar tu Pull Request.
-
-> [!TIP]
-> **⚠️ Protocolo de Contingencia (Solo si el docente lo solicita):**
-> Si el docente comunica expresamente que se agregó un archivo plantilla nuevo que necesitas en tu máquina, actualiza tu fork con **1 solo clic** desde la web de GitHub en **"Sync fork ▾ ➔ Update branch"**, o ejecuta en tu terminal:
-> ```bash
-> git pull https://github.com/UETS-Programacion-Movil/01-diagnostica.git main
-> ```
+> **💡 Pruebas con Auto-Sync Inteligente (Cero Estrés de Rebase):**
+> Cada vez que ejecutas `pnpm test` en tu computadora, tus archivos de prueba se sincronizan automáticamente con las pruebas oficiales de `main` en segundo plano. No te preocupes por hacer `git pull` ni `rebase`.
 
 ---
 
 ## 📺 Diapositivas Interactivas 16:9
 
-Puedes proyectar y estudiar la presentación oficial directamente desde tu navegador:
+[![Ver Diapositivas en Vivo](https://img.shields.io/badge/Diapositivas_Interactivas-Ver_en_Línea-10B981?style=for-the-badge&logo=cloudflare)](https://uets-programacion-movil.github.io/01-diagnostica/)
 
-👉 **[Ver Diapositivas en Vivo en GitHub Pages](https://uets-programacion-movil.github.io/01-diagnostica/)** *(o abre `index.html` localmente).*
+👉 **[Abrir Diapositivas en el Portal Oficial](https://uets-programacion-movil.github.io/01-diagnostica/)** *(o abre `index.html` para redirección automática).*
 
 - **Navegación:** Teclas `[←]`, `[→]` o `[Espacio]`.
 - **Pantalla Completa:** Presiona `[F]`.
