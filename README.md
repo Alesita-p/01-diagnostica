@@ -14,9 +14,11 @@
 
 ## 📺 Diapositivas Interactivas 16:9
 
-[![Ver Diapositivas en Vivo](https://img.shields.io/badge/Diapositivas_Interactivas-Ver_en_Línea-10B981?style=for-the-badge&logo=cloudflare)](https://uets-programacion-movil.github.io/01-diagnostica/)
+[![Ver Diapositivas en Vivo](https://img.shields.io/badge/Diapositivas_Interactivas-Ver_en_Línea-10B981?style=for-the-badge&logo=cloudflare)](https://uets-pm-portal.vgmiltonisaac.workers.dev/01-diagnostica/)
 
-👉 **[Abrir Diapositivas en el Portal Oficial](https://uets-programacion-movil.github.io/01-diagnostica/)** *(o abre `index.html` para redirección automática).*
+👉 **[Abrir Diapositivas en el Portal Oficial (Cloudflare Workers)](https://uets-pm-portal.vgmiltonisaac.workers.dev/01-diagnostica/)**
+
+👉 **[Ver Portal Principal de la Asignatura](https://uets-pm-portal.vgmiltonisaac.workers.dev/)**
 
 - **Navegación:** Teclas `[←]`, `[→]` o `[Espacio]`.
 - **Pantalla Completa:** Presiona `[F]`.
