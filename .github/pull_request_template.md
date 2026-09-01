@@ -1,7 +1,6 @@
 ## 👨‍🎓 Datos del Estudiante
 - **Nombres y Apellidos:** [Escribe tus dos nombres y dos apellidos]
-- **Curso y Especialidad:** 3° Bachillerato Técnico en Informática
-- **Paralelo:** [A / B]
+- **Curso:** [3E1 / 3E2]
 - **Fecha de Entrega:** [DD/MM/2026]
 
 ---
