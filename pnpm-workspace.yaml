@@ -1,2 +1,6 @@
 allowBuilds:
+<<<<<<< HEAD
   esbuild: true
+=======
+  esbuild: set this to true or false
+>>>>>>> 2fd63717445066a967b1d79c958432f7107c2524
