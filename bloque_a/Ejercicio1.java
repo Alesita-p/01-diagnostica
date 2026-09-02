@@ -1,14 +1,18 @@
 public class Ejercicio1 {
     public static void main(String[] args) {
-        int edad = 17;
-        double nota = 8.5;
-        String nombre = "Alejandra";
-        boolean activo = true;
 
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Edad: " + edad);
-        System.out.println("Nota: " + nota);
-        System.out.println("¿Está activo?: " + activo);
+        int Edad = 17;
+        double notaFinal = 9.6;
+        char paralelo = 'E';
+        boolean matriculado = true;
+        String nombreEstudiante = "Alejandra";
+        
+
+        System.out.println("Estudiante: " + nombreEstudiante);
+        System.out.println("Edad: " + Edad + " años");
+        System.out.println("Nota Final: " + notaFinal);
+        System.out.println("Paralelo: " + paralelo);
+        System.out.println("¿Está matriculado?: " + matriculado);
+
     }
 }
-

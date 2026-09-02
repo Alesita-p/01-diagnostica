@@ -5,16 +5,16 @@ public class Ejercicio2 {
         Scanner teclado = new Scanner(System.in);
         
         System.out.print("Introduce el primer número: ");
-        double num1 = teclado.nextDouble();
+        double numero1 = teclado.nextDouble();
         
         System.out.print("Introduce el segundo número: ");
-        double num2 = teclado.nextDouble();
-        double suma = num1 + num2;
-        double resta = num1 - num2;
-        double multiplicacion = num1 * num2;
+        double numero2 = teclado.nextDouble();
+        double suma = numero1 + numero2;
+        double resta = numero1 - numero2;
+        double multiplicacion = numero1 * numero2;
 
-        if (num2 != 0) {
-            double division = num1 / num2;
+        if (numero2 != 0) {
+            double division = numero1 / numero2;
             System.out.println("División: " + division);
         } else {
             System.out.println("División: No es posible dividir entre cero.");
