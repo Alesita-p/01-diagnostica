@@ -14,7 +14,7 @@ function procesarCalculo() {
 
   const promedio = calcularPromedioNotas(val1, val2);
 
-  cajaResultado.textContnt = "Promedio: " + promedio;
+  cajaResultado.textContent = "Promedio: " + promedio;
 }
 
 const boton = document.querySelector("#btn-calcular");
